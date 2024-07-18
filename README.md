@@ -8,16 +8,16 @@ In Java, serialization is typically achieved using the java.io.Serializable inte
 
 Mechanism:
 
-Serializable Interface: A class must implement the Serializable interface to allow its objects to be serialized. This interface is a marker interface (it has no methods) that signals to the Java Virtual Machine (JVM) that the class is eligible for serialization.
-ObjectOutputStream: The ObjectOutputStream class is used to write objects to an output stream. It has methods such as writeObject(Object obj) to serialize objects.
+- Serializable Interface: A class must implement the Serializable interface to allow its objects to be serialized. This interface is a marker interface (it has no methods) that signals to the Java Virtual Machine (JVM) that the class is eligible for serialization.
+- ObjectOutputStream: The ObjectOutputStream class is used to write objects to an output stream. It has methods such as writeObject(Object obj) to serialize objects.
 
 ### Deserialization
 Definition: Deserialization is the process of converting a byte stream back into a copy of the original Java object.
 
 Mechanism:
 
-ObjectInputStream: The ObjectInputStream class is used to read objects from an input stream. It has methods like readObject() to deserialize objects.
-ClassNotFoundException: This exception must be handled during deserialization, as the JVM needs to find the class definition for the serialized object.
+- ObjectInputStream: The ObjectInputStream class is used to read objects from an input stream. It has methods like readObject() to deserialize objects.
+- ClassNotFoundException: This exception must be handled during deserialization, as the JVM needs to find the class definition for the serialized object.
 
 ## --Use Cases and Applications--
  1. Persistence Description: Save the state of an object to a file or database for later use. Example: Storing user sessions.
@@ -35,10 +35,10 @@ ClassNotFoundException: This exception must be handled during deserialization, a
 
  Key points:
 
-Objects must implement the Serializable interface to be serialized.
-Serialization is platform-independent.
-Commonly used for object persistence, network communication, and data sharing.
-In essence, serialization allows you to save or transfer object data, while deserialization brings it back to life as an object.
+- Objects must implement the Serializable interface to be serialized.
+- Serialization is platform-independent.
+- Commonly used for object persistence, network communication, and data sharing.
+- In essence, serialization allows you to save or transfer object data, while deserialization brings it back to life as an object.
 
 ### Conclusion
 Serialization and deserialization are among the poser mechanisms available in Java for persistence, transmission, and reconstructions of objects. In-depth understanding of the system works with such components is essential for the effective management of data and network communication in Java applications.
